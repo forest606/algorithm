@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/*
+inter[0][0] = enter[0] + station[0][0]
+inter[i][0] = min(inter[i-1][0] + station[i][0], inter[i-1][1] + move[i-1][1] + station[i][0])
+
+inter[0][1] = enter[1] + station[0][1]
+inter[i][1] = min(inter[i-1][1] + station[i][1], inter[i-1][0] + move[i-1][0] + station[i][1])
+*/
+
 #define LINE_COUNT 2
 #define STATION_COUNT 6
 
