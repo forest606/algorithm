@@ -102,6 +102,8 @@ int lcs_length(char *astr, char *bstr) {
 
   print_lcs(astr, output, alen - 1, blen - 1);
   printf("\n");
+  free_2d_array(((void**)count, alen, blen);
+  free_2d_array(((void**)output, alen, blen);
   return len;
 }
 
